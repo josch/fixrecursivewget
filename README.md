@@ -9,3 +9,5 @@ things which these two scripts fix:
    content type of the static content by the filename extension. But files that
    are saved under a name like `foo?bar=baz&blub=bla` do not have a recognized
    extension. This is fixed by `filenameext.sh`.
+
+Both scripts together allowed to fix a mirror of a phpbb forum for me.
