@@ -16,8 +16,8 @@ for filename in sys.argv[1:]:
         s = s.replace("&amp;", "%26")
         return s
 
-    data = re.sub(r'href="[^"]+\.php[^"]*"', aux, data)
-    data = re.sub(r'src="[^"]+\.php[^"]*"', aux, data)
+    data = re.sub(r'href="[^"]+"', aux, data)
+    data = re.sub(r'src="[^"]+"', aux, data)
 
     with open(filename, "w") as f:
         f.write(data)

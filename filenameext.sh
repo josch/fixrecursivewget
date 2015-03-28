@@ -32,5 +32,5 @@ for f in *; do
 	mv ${f} ${f}.${ext}
 	# now replace & and ? in f
 	f=`echo "$f" | sed 's/?/%3F/g; s/&/%26/g'`
-	perl -pi -e "s/\\Q${f}\\E([#\"])/${f}.${ext}\1/g" *php*
+	perl -pi -e "s/\\Q${f}\\E([#\"])/${f}.${ext}\1/g" *
 done
